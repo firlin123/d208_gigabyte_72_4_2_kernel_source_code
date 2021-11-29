@@ -321,7 +321,7 @@ sub perlvals(@) {
 	my @l = ();
 
 	foreach $v (@_) {
-		if (!$v)){
+		if (!$v){
 			push(@l, 'undef');
 		} elsif ($v =~ /^0x/) {
 			push(@l, "\'".$v."\'");
